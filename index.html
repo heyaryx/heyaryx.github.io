@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>ARYX | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "gsap": "https://unpkg.com/gsap@3.12.2/index.js",
+            "ScrollTrigger": "https://unpkg.com/gsap@3.12.2/ScrollTrigger.js"
+        }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <div id="cursor"></div>
+    <canvas id="bg"></canvas>
+    
+    <main>
+        <header>
+            <h1>ARYX</h1>
+            <p>Just a Teen messing around with computers.</p>
+            <div class="id-card-container">
+                <div class="id-card-string"></div>
+                <div class="id-card">
+                    <div class="id-card-face id-card-front"></div>
+                    <div class="id-card-face id-card-back"></div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Over 5 years of self-taught coding and hands-on project development</p>
+            
+            <div class="skills">
+                <div class="category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>SASS/SCSS</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Three.js</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>GSAP</li>
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Firebase</li>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>Docker</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase Firestore</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3>DevOps</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Vercel</li>
+                        <li>Netlify</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project">
+                    <h3>PiNotes</h3>
+                    <p>Complete Notes App with serverless sharing capabilities and customizations.</p>
+                </article>
+
+                <article class="project">
+                    <h3>webCa</h3>
+                    <p>Web Habit Tracker & Carbon Footprint Estimator that helps users monitor their daily activities and environmental impact.</p>
+                </article>
+
+                <article class="project">
+                    <h3>lax3d</h3>
+                    <p>A lightweight, browser-based tool designed for users to import 3D models, animate them with simple transformations, and render them into various formats.</p>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out!</p>
+            <div class="social-links">
+                <a href="https://github.com/heyaryx/" target="_blank">GitHub</a>
+                <a href="https://instagram.com/heyaryx" target="_blank">Instagram</a>
+                <a href="https://youtube.com/@heyaryx" target="_blank">YouTube</a>
+                <a href="/cdn-cgi/l/email-protection#f29a978b93808b8ab2959f939b9edc919d9f">Email</a>
+            </div>
+        </section>
+    </main>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
