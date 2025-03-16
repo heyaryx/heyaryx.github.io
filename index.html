@@ -2,150 +2,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>ARYX | Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
-            "gsap": "https://unpkg.com/gsap@3.12.2/index.js",
-            "ScrollTrigger": "https://unpkg.com/gsap@3.12.2/ScrollTrigger.js"
-        }
-    }
-    </script>
-    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cursor"></div>
-    <canvas id="bg"></canvas>
+    <div class="container">
+        <div class="section green">
+            <nav class="nav-menu">
+                <div class="logo">ARYX</div>
+                <ul class="nav-links">
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <div class="content">
+                <h1 class="title">
+                    Hi, I'm 
+                    <span class="highlight">ARYX</span>
+                </h1>
+                <p class="subtitle">Just a Teen messing around with computers.</p>
+                
+                <div class="button-container">
+                    <a href="#work" class="button primary-button">SEE MY WORK</a>
+                    <a href="#contact" class="button secondary-button">CONTACT ME</a>
+                </div>
+            </div>
+
+            <div class="icon-bar">
+                <div class="icon" data-tooltip="5+ years experience">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16L6 12L7.41 10.59L10 13.17L16.59 6.58L18 8L10 16Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="icon" data-tooltip="Self-taught">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L1 21H23L12 2ZM12 6L19.53 19H4.47L12 6ZM11 10V14H13V10H11ZM11 16V18H13V16H11Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="icon" data-tooltip="Project builder">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="section purple">
+            <div class="content" id="work">
+                <h2 class="section-title">
+                    Projects
+                </h2>
+                
+                <div class="projects">
+                    <div class="project-card">
+                        <div class="project-number">01</div>
+                        <h3>PiNotes</h3>
+                        <p>Complete Notes App with serverless sharing capabilities and customizations.</p>
+                        <a href="#" class="button project-button">VIEW PROJECT</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <h3>webCa</h3>
+                        <p>Web Habit Tracker & Carbon Footprint Estimator that helps users monitor their daily activities and environmental impact.</p>
+                        <a href="#" class="button project-button">VIEW PROJECT</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <h3>lax3d</h3>
+                        <p>A lightweight, browser-based tool designed for users to import 3D models, animate them with simple transformations, and render them into various formats.</p>
+                        <a href="#" class="button project-button">VIEW PROJECT</a>
+                    </div>
+                </div>
+                
+                <div id="skills" class="skills-section">
+                    <h2 class="section-title">
+                        Skills
+                    </h2>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">HTML</li>
+                                <li class="skill-item">CSS</li>
+                                <li class="skill-item">JavaScript</li>
+                                <li class="skill-item">TypeScript</li>
+                                <li class="skill-item">SASS/SCSS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">Python</li>
+                                <li class="skill-item">PHP</li>
+                                <li class="skill-item">Node.js</li>
+                                <li class="skill-item">Express</li>
+                                <li class="skill-item">Django</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Libraries</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">React</li>
+                                <li class="skill-item">Three.js</li>
+                                <li class="skill-item">Angular</li>
+                                <li class="skill-item">Vue.js</li>
+                                <li class="skill-item">GSAP</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">Firebase</li>
+                                <li class="skill-item">VS Code</li>
+                                <li class="skill-item">GitHub</li>
+                                <li class="skill-item">Docker</li>
+                                <li class="skill-item">Figma</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Databases</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">MongoDB</li>
+                                <li class="skill-item">MySQL</li>
+                                <li class="skill-item">PostgreSQL</li>
+                                <li class="skill-item">Firebase Firestore</li>
+                                <li class="skill-item">Redis</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>DevOps</h3>
+                            <ul class="skill-list">
+                                <li class="skill-item">AWS</li>
+                                <li class="skill-item">Vercel</li>
+                                <li class="skill-item">Netlify</li>
+                                <li class="skill-item">CI/CD</li>
+                                <li class="skill-item">Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="about" class="about-section">
+                    <h2 class="section-title">
+                        About Me
+                    </h2>
+                    <p class="about-text">Over 5 years of self-taught coding and hands-on project development. I'm passionate about creating digital experiences that blend functionality with creativity. Always learning, always building, always exploring what's possible with code.</p>
+                </div>
+                
+                <div id="contact" class="contact-section">
+                    <h2 class="section-title">
+                        Get In Touch
+                    </h2>
+                    <div class="contact-info">
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfb7baa6beada6a79fb8b2beb6b3f1bcb0b2">[email&#160;protected]</a></p>
+                        <p class="website-link"><a href="https://heyaryx.me" target="_blank">heyaryx.me</a></p>
+                        <div class="social-icons">
+                            <a href="https://github.com/hearyx" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16L6 12L7.41 10.59L10 13.17L16.59 6.58L18 8L10 16ZM12 6L19.53 19H4.47L12 6ZM11 10V14H13V10H11ZM11 16V18H13V16H11Z" fill="currentColor"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://instagram.com/heyaryx" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.582 7.15601C21.352 6.29001 20.67 5.60701 19.802 5.37801C18.254 4.96801 12 4.96801 12 4.96801C12 4.96801 5.748 4.96801 4.198 5.37801C3.332 5.60701 2.65 6.29001 2.418 7.15601C2 8.70301 2 12.003 2 12.003C2 12.003 2 15.305 2.418 16.85C2.65 17.716 3.332 18.398 4.198 18.628C5.748 19.038 12 19.038 12 19.038C12 19.038 18.254 19.038 19.802 18.628C20.67 18.398 21.352 17.716 21.582 16.85C22 15.305 22 12.003 22 12.003C22 12.003 22 8.70301 21.582 7.15601ZM10 15.003V9.00301L15.196 12.003L10 15.003Z" fill="currentColor"/>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://youtube.com/heyaryx" target="_blank" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.582 7.15601C21.352 6.29001 20.67 5.60701 19.802 5.37801C18.254 4.96801 12 4.96801 12 4.96801C12 4.96801 5.748 4.96801 4.198 5.37801C3.332 5.60701 2.65 6.29001 2.418 7.15601C2 8.70301 2 12.003 2 12.003C2 12.003 2 15.305 2.418 16.85C2.65 17.716 3.332 18.398 4.198 18.628C5.748 19.038 12 19.038 12 19.038C12 19.038 18.254 19.038 19.802 18.628C20.67 18.398 21.352 17.716 21.582 16.85C22 15.305 22 12.003 22 12.003C22 12.003 22 8.70301 21.582 7.15601ZM10 15.003V9.00301L15.196 12.003L10 15.003Z" fill="currentColor"/>
+                                </svg>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="/cdn-cgi/l/email-protection#deb6bba7bfaca7a69eb9b3bfb7b2f0bdb1b3" class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <main>
-        <header>
-            <h1>ARYX</h1>
-            <p>Just a Teen messing around with computers.</p>
-            <div class="id-card-container">
-                <div class="id-card-string"></div>
-                <div class="id-card">
-                    <div class="id-card-face id-card-front"></div>
-                    <div class="id-card-face id-card-back"></div>
-                </div>
-            </div>
-            <a href="#about" class="scroll-down">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 5v14M5 12l7 7 7-7"/>
-                </svg>
-            </a>
-        </header>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Over 5 years of self-taught coding and hands-on project development</p>
-            
-            <div class="skills">
-                <div class="category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>SASS/SCSS</li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-                
-                <div class="category">
-                    <h3>Libraries</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>Three.js</li>
-                        <li>Angular</li>
-                        <li>Vue.js</li>
-                        <li>GSAP</li>
-                    </ul>
-                </div>
-
-                <div class="category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Firebase</li>
-                        <li>VS Code</li>
-                        <li>GitHub</li>
-                        <li>Docker</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-                
-                <div class="category">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>Firebase Firestore</li>
-                        <li>Redis</li>
-                    </ul>
-                </div>
-                
-                <div class="category">
-                    <h3>DevOps</h3>
-                    <ul>
-                        <li>AWS</li>
-                        <li>Vercel</li>
-                        <li>Netlify</li>
-                        <li>CI/CD</li>
-                        <li>Git</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <article class="project">
-                    <h3>PiNotes</h3>
-                    <p>Complete Notes App with serverless sharing capabilities and customizations.</p>
-                </article>
-
-                <article class="project">
-                    <h3>webCa</h3>
-                    <p>Web Habit Tracker & Carbon Footprint Estimator that helps users monitor their daily activities and environmental impact.</p>
-                </article>
-
-                <article class="project">
-                    <h3>lax3d</h3>
-                    <p>A lightweight, browser-based tool designed for users to import 3D models, animate them with simple transformations, and render them into various formats.</p>
-                </article>
-            </div>
-        </section>
-
-        <footer>
-            
-        </footer>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out!</p>
-            <div class="social-links">
-                <a href="https://github.com/heyaryx/" target="_blank">GitHub</a>
-                <a href="https://instagram.com/heyaryx" target="_blank">Instagram</a>
-                <a href="https://youtube.com/@heyaryx" target="_blank">YouTube</a>
-                <a href="/cdn-cgi/l/email-protection#f29a978b93808b8ab2959f939b9edc919d9f">Email</a>
-            </div>
-        </section>
-    </main>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
 </body>
 </html>
